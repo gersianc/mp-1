@@ -1,0 +1,240 @@
+/*Comments by ChatGPT*/
+
+/* Remove default margin and padding, set box-sizing to include borders in dimensions */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a monospace font, flexbox layout, minimum height to fill the viewport, and background color */
+body {
+    font-family: Monaco, "Lucida Grande", "Courier New", monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color:#748D92;
+    margin: 0 2%;
+}
+
+/* Styling for header with background color, padding, and rounded corners */
+header {
+    background-color: #212A31;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+/* Responsive font size for h1 */
+header h1 {
+    font-size: calc(24px + 2vw);
+    font-weight: bold;
+}
+
+/* Responsive font size for paragraph in header */
+header p {
+    font-size: calc(16px + 0.5vw);
+    margin-top: 1%;
+}
+
+/* Main container with flexbox layout */
+.navmain {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Navbar styling: background color, padding, width, flex layout, and border radius */
+.navbar {
+    background-color: #2E3944;
+    padding: 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    max-height: 100vh;
+}
+
+/* Remove list styling, apply flexbox layout to organize links */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+/* Space between list items */
+.navbar ul li {
+    margin: 10px 0;
+}
+
+
+/* Styling for links: color, text alignment, and padding */
+.navbar ul li a {
+    color: ghostwhite;
+    text-decoration: none;
+    font-size: calc(12px + 0.5vw);
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Change background color on hover */
+.navbar ul li a:hover {
+    background-color: #124E66;
+}
+
+/* Main content area with background color and padding */
+main {
+    background-color: #D3D9D4;
+    padding: 0 5px;
+    width: 70%;
+}
+
+/* Image styling: floats to the left, margin and border-radius */
+main img {
+    float: left;
+    margin: 20px;
+    border-radius: 10px;
+    height: auto;
+    width: 200px;
+}
+
+/* Paragraph styling inside main: margin and line height */
+main p {
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: calc(6px + 0.5vw);
+}
+
+/* Margin at the top of the Jobs section */
+.Jobs{
+    margin-top: 20px;
+}
+
+/* Styling for h2 in Jobs section */
+.Jobs h2 {
+    font-size: calc(12px + 1vw);
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    color: #212A31;
+}
+
+
+/* Styling for h3 in Jobs section */
+.Jobs h3 {
+    font-size: calc(9px + 1vw);
+    color: #212A31;
+    margin-bottom: 5px;
+}
+
+/* Italicized text inside h4 with gray color */
+.Jobs h4 em {
+    font-size: calc(10px + 0.3vw);
+    color: gray;
+}
+
+/* Remove list styling for the Jobs section */
+.Jobs ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+/* Styling for individual list items in Jobs section */
+.Jobs ul li {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: calc(8px + 0.5vw);
+    color: black;
+}
+
+.Jobs ul li:hover {
+    background-color: white;
+}
+
+.Jobs h4 {
+    font-size: calc(14px + 0.5vw);
+    color: black;
+    margin-bottom: 10px;
+}
+
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 750px) {
+    header {
+        text-align: center;
+    }
+
+    .navmain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .heading{
+        font-size: calc(16px + 0.5vw);
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-radius: 5px;
+    }
+    main img{
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+    .navbar {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        flex-grow: 1;
+        margin: 0;
+    }
+
+    .navbar ul li a {
+        font-size: calc(10px + 0.5vw);
+        padding: 10px;
+        text-align: center;
+    }
+    footer{
+        position: relative;
+    }
+
+}
+
+/* Footer styling: background color, padding, and centered text */
+footer {
+    background-color:#212A31 ;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    border-radius: 5px;
+}

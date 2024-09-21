@@ -1,0 +1,215 @@
+/*Comments by ChatGpt*/
+/*color scheme inspo from: https://visme.co/blog/website-color-schemes/*/
+
+/* Reset margin, padding, and box-sizing for all elements */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set general styling for the body, including font, layout, and background */
+body {
+    font-family: Monaco, "Lucida Grande", "Courier New", monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color:#748D92;
+    margin: 0 2%;
+}
+
+/* Font size for elements with the class "heading", dynamically calculated based on viewport width */
+.heading{
+    font-size: calc(12px + 0.5vw);
+}
+
+/* Styles for the header, including background, text, and padding */
+header {
+    background-color: #212A31;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+/* Sets block display for the Description class, making elements take up full width */
+.Description {
+    display: block;
+}
+
+/* Adjust the size and styling of h3 elements inside the Description class */
+.Description h3 {
+    font-size: calc(6px + 1vw);
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Styling for unordered lists in the Description class */
+.Description ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 15px;
+    width: 100%;
+}
+
+/* Styles for list items in Description: spacing, background, padding, etc. */
+.Description ul li {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 8px;
+    font-size: calc(6px + 0.5vw);
+    color: black;
+    position: relative;
+    padding-left: 35px;
+}
+
+/* Changes background color on hover for list items */
+.Description ul li:hover {
+    background-color: lightgray;
+}
+
+/* Header text styling */
+header h1 {
+    font-size: calc(24px + 2vw);
+    font-weight: bold;
+}
+
+/* Paragraph styling in the header */
+header p {
+    font-size: calc(16px + 0.5vw);
+    margin-top: 1%;
+}
+
+/* Flex container for the navigation and main content */
+.navmain {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Navbar styling: background, padding, layout */
+.navbar {
+    background-color: #2E3944;
+    padding: 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    max-height: 100vh;
+}
+
+/* List styles inside the navbar: flex layout and spacing */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+/* Spacing between individual list items */
+.navbar ul li {
+    margin: 10px 0;
+}
+
+/* Styling for links in the navbar */
+.navbar ul li a {
+    color: ghostwhite;
+    text-decoration: none;
+    font-size: calc(12px + 0.5vw);
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Hover effect for links: changes background color */
+.navbar ul li a:hover {
+    background-color: #124E66;
+}
+
+/* Main content area styling */
+main {
+    background-color: #D3D9D4;
+    padding: 20px;
+    width: 70%;
+}
+
+/* Styling for paragraphs in the main content area */
+main p {
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: calc(14px + 0.5vw);
+}
+
+
+/* Media query for screens smaller than 750px (responsiveness) */
+@media screen and (max-width: 750px) {
+    header {
+        text-align: center;
+    }
+
+    .navmain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading{
+        font-size: calc(16px + 0.5vw);
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        flex-grow: 1;
+        margin: 0;
+    }
+
+    .navbar ul li a {
+        font-size: calc(10px + 0.5vw);
+        padding: 10px;
+        text-align: center;
+    }
+    footer{
+        position: relative;
+    }
+
+}
+
+/* Footer styling: background, text color, padding */
+footer {
+    background-color:#212A31 ;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    border-radius: 5px;
+}

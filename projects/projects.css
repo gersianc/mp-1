@@ -1,0 +1,233 @@
+/*Comments by ChatGPT*/
+
+/* Reset margin, padding, and ensure consistent box-sizing across all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main content area: background color and padding */
+main {
+    background-color: #D3D9D4;
+    padding: 20px;
+    width: 70%;
+}
+
+/* Body styling: monospace font, flexbox layout, min-height for full viewport, background color */
+body {
+    font-family: Monaco, "Lucida Grande", "Courier New", monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #748D92;
+    margin: 0 2%;
+}
+
+/* Color scheme inspiration */
+header {
+    background-color: #212A31;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+/* Header title and paragraph styling */
+header h1 {
+    font-size: calc(24px + 2vw);
+    font-weight: bold;
+}
+
+header p {
+    font-size: calc(16px + 0.5vw);
+    margin-top: 1%;
+}
+
+/* Flexbox layout for main content and navbar */
+.navmain {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Navbar styling: background color, padding, flex layout */
+.navbar {
+    background-color: #2E3944;
+    padding: 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    max-height: 100vh;
+}
+
+/* Navbar list styling */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+/* Navbar list item margin */
+.navbar ul li {
+    margin: 10px 0;
+}
+
+/* Navbar links: text styling and hover effect */
+.navbar ul li a {
+    color: ghostwhite;
+    text-decoration: none;
+    font-size: calc(12px + 0.5vw);
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background-color: #124E66;
+}
+
+/* Calculator container styling */
+.calculator {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 320px;
+}
+
+/* Flex layout for calculator divs */
+.calculator div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Label styling */
+label {
+    font-size: 16px;
+    color: black;
+}
+
+/* Button styling with hover effect */
+button {
+    background-color: #124E66;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 5px;
+    width: 50px;
+}
+
+button:hover {
+    background-color: #0A374C;
+}
+
+/* Output display styling */
+#output {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Responsive design for smaller screens (max-width: 750px) */
+@media screen and (max-width: 750px) {
+    header {
+        text-align: center;
+    }
+
+    /* Stack elements vertically on small screens */
+    .navmain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading {
+        font-size: calc(16px + 0.5vw);
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Main content layout for small screens */
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    /* Adjust image size on small screens */
+    main img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    /* Navbar styling for small screens */
+    .navbar {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        flex-grow: 1;
+        margin: 0;
+    }
+
+    .navbar ul li a {
+        font-size: calc(10px + 0.5vw);
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Adjust calculator width for small screens */
+    .calculator {
+        width: 40vh;
+    }
+
+    /* Button width for small screens */
+    button {
+        width: 100%;
+    }
+
+    /* Footer positioning for small screens */
+    footer {
+        position: relative;
+    }
+}
+
+/* Footer styling */
+footer {
+    background-color: #212A31;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    border-radius: 5px;
+}

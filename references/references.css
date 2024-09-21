@@ -1,0 +1,215 @@
+/*Comments by ChatGPT*/
+
+/* Reset margin and padding for all elements, ensuring consistent box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main content area: background color, padding, and width */
+main {
+    background-color: #D3D9D4;
+    padding: 20px;
+    width: 70%;
+}
+
+/* Body styling: font family, flexbox layout, minimum height for full viewport, and background color */
+body {
+    font-family: Monaco, "Lucida Grande", "Courier New", monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #748D92;
+    margin: 0 2%;
+}
+
+/* Color scheme inspired by external source */
+header {
+    background-color: #212A31;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+/* Header title and paragraph styling with responsive font sizes */
+header h1 {
+    font-size: calc(24px + 2vw);
+    font-weight: bold;
+}
+
+header p {
+    font-size: calc(16px + 0.5vw);
+    margin-top: 1%;
+}
+
+/* Flex layout for main content and navbar */
+.navmain {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Navbar container: background color, padding, flexbox layout, and height restriction */
+.navbar {
+    background-color: #2E3944;
+    padding: 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    max-height: 100vh;
+}
+
+/* Navbar list styling */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+/* Navbar list items: margin between items */
+.navbar ul li {
+    margin: 10px 0;
+}
+
+/* Navbar links: text styling, block display, padding, and hover effect */
+.navbar ul li a {
+    color: ghostwhite;
+    text-decoration: none;
+    font-size: calc(12px + 0.5vw);
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Hover effect for navbar links */
+.navbar ul li a:hover {
+    background-color: #124E66;
+}
+
+/* Table styling: width, margin, and background color */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+/* Table caption styling */
+caption {
+    font-size: calc(16px + 0.5vw);
+    margin: 10px 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Table cell (th and td) padding, text alignment, and border */
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px lightgray solid;
+}
+
+/* Table header (th) styling: background color and font color */
+th {
+    background-color: #2E3944;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hover effect for table rows */
+tbody tr:hover {
+    background-color: lightgray;
+}
+
+/* Media queries for responsive design on smaller screens */
+@media screen and (max-width: 750px) {
+    /* Center text in header */
+    header {
+        text-align: center;
+    }
+
+    /* Stack elements vertically and center them */
+    .navmain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Responsive heading size and alignment */
+    .heading {
+        font-size: calc(16px + 0.5vw);
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Flex layout for main content on small screens */
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    /* Adjust image size for small screens */
+    main img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    /* Full width navbar for small screens */
+    .navbar {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    /* Navbar list layout on small screens */
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    /* Remove margin for navbar list items on small screens */
+    .navbar ul li {
+        flex-grow: 1;
+        margin: 0;
+    }
+
+    /* Adjust font size and padding for navbar links on small screens */
+    .navbar ul li a {
+        font-size: calc(10px + 0.5vw);
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Footer positioning on small screens */
+    footer {
+        position: relative;
+    }
+}
+
+/* Footer styling: background color, text color, padding, and centered content */
+footer {
+    background-color: #212A31;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    border-radius: 5px;
+}
